@@ -18,7 +18,11 @@
 
 package io.rapidpro.androidchannel;
 
-import android.content.*;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
@@ -62,6 +66,7 @@ public class UnclaimedFragment extends Fragment {
         } else if (claimCode.length() > 3){
             claimCode = claimCode.substring(0,3) + " " + claimCode.substring(3,6) + " " + claimCode.substring(6,9);
         }
+
         m_claimCode.setText(claimCode);
     }
 

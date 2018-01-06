@@ -22,6 +22,7 @@ public interface Intents {
     public static final String START_SYNC = "io.rapidpro.androidchannel.StartSync";
 
     public static final String SHOW_SETTINGS = "io.rapidpro.androidchannel.ShowSettings";
+    public static final String SHOW_PACKS = "io.rapidpro.androidchannel.ShowPacks";
     public static final String RUN_LOCAL_COMMANDS = "io.rapidpro.androidchannel.RunLocalCommands";
     public static final String PING_FCM = "io.rapidpro.androidchannel.PingFCM";
 

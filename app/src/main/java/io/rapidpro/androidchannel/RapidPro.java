@@ -34,6 +34,7 @@ import android.preference.PreferenceManager;
 import android.provider.CallLog.Calls;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.TaskStackBuilder;
+
 import com.commonsware.cwac.wakeful.WakefulIntentService;
 
 import java.util.ArrayList;
@@ -155,7 +156,7 @@ public class RapidPro extends Application {
 
         LOG.d("Found " + packs.size() + " installed messaging packs");
         for (String pack : packs) {
-            LOG.d("   - " + pack);
+            LOG.d("   - " + pack  + " installed messaging packs");
         }
 
         m_installedPacks = packs;
@@ -438,8 +439,7 @@ public class RapidPro extends Application {
         }
 
         if (packToInstall > 0) {
-            Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse("market://details?id=io.rapidpro.androidchannel.pack" + packToInstall));
+            Intent intent = new Intent(Intents.SHOW_PACKS);
             context.startActivity(intent);
         }
     }
