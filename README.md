@@ -27,4 +27,4 @@ That's it!
 You can put the client in developer mode by tapping on the logo 11 times. Once you've acheived this, you'll see a short toast at the bottom of the window. Once this is enabled you will see additional options in the settings menu -- chief among them is the ability to point your client to an IP Address which is useful if you are running RapidPro in your development environmnet.
 
 
-
+CCLBrasil

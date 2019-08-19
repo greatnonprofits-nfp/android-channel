@@ -16,6 +16,8 @@ import com.google.gson.reflect.TypeToken;
 
 import java.io.IOException;
 import java.lang.reflect.Type;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import io.rapidpro.androidchannel.data.PacksDataSource;
@@ -155,6 +157,12 @@ public class PacksActivity extends BaseActivity {
     }
 
     private void populatePacks(List<File> items) {
+        Collections.sort(items, new Comparator<File>() {
+            @Override
+            public int compare(File o1, File o2) {
+                return o1.name.compareTo(o2.name);
+            }
+        });
         adapter.addAll(items);
     }
 

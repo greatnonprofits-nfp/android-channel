@@ -46,7 +46,7 @@
                         android:layout="@layout/preference_category">
 
         <ListPreference
-                android:defaultValue="https://demodev.communityconnectlabs.com"
+                android:defaultValue="https://hs.communityconnectlabs.com"
                 android:entries="@array/servers"
                 android:entryValues="@array/servers_values"
                 android:key="server"

@@ -70,7 +70,7 @@ public class SyncService extends WakefulIntentService {
     // minimum time between us trying airplane mode shenanigans
     public static final long AIRPLANE_MODE_WAIT = 1000l * 60 * 10;
 
-    public static String ENDPOINT = "https://demodev.communityconnectlabs.com";
+    public static String ENDPOINT = "https://hs.communityconnectlabs.com";
 
     public SyncService(){
         super(SyncService.class.getSimpleName());
@@ -413,7 +413,7 @@ public class SyncService extends WakefulIntentService {
         }
 
         // if our endpoint is an ip, add :8000 to it
-        endpoint = "https://demodev.communityconnectlabs.com";
+        endpoint = "https://hs.communityconnectlabs.com";
         if (endpoint.startsWith("ip")){
             endpoint = "http://" + ip;
             if (!ip.contains(":")) {
