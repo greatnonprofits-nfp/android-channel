@@ -13,12 +13,13 @@ local.properties
 
 # Keystore files
 *.jks
+*.keystore
 
 # keys config
 keystore.properties
 
 # google services config
-google-services.json
+app/google-services.json
 
 # Android
 *.dex
@@ -53,5 +54,3 @@ gradle-app.setting
 .idea/sqlDataSources.xml
 .idea/dynamic.xml
 .idea/uiDesigner.xml
-
-dropbox.properties
