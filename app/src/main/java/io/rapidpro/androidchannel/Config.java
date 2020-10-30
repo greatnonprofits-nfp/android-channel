@@ -2,7 +2,7 @@ package io.rapidpro.androidchannel;
 
 public class Config {
     //This is the URL of your RapidPRO instance
-    public static final String ENDPOINT = "https://dev.communityconnectlabs.com";
+    public static final String ENDPOINT = "https://app.communityconnectlabs.com";
 
 
 
